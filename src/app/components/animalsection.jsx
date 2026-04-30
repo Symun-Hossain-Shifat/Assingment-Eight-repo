@@ -12,7 +12,7 @@ console.log(Data)
   return (
     <div className='container mx-auto'>
         
-             <h1 className='font-bold text-3xl text-green-900 text-center '>Featured animals {Data.length} Items</h1>
+             <h1 className='font-bold  mb-10 text-3xl text-green-900 text-center '>Featured animals {Data.length} Items</h1>
 
        <div className='grid  w-8/12 mx-auto mt-5 p-4 gap-5 bg-gray-50 justify-center  grid-cols-1 md:grid-cols-2'>
         {Data.map( D => (

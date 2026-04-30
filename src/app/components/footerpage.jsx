@@ -5,7 +5,7 @@ import { SlLocationPin } from 'react-icons/sl'
 
 function Footerpage () {
   return (
-    <div className='bg-black text-white p-5'>
+    <div className='bg-black text-white p-5 mt-5'>
       <footer className="footer grid grid-cols-1 py-10 md:grid-cols-3 container gap-5 mx-auto ">
   <div className='space-y-3'>
     <h6 className=" font-bold text-xl text-white">Contact info
