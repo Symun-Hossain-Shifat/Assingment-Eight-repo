@@ -1,8 +1,8 @@
-import animal from '@/Data/animal.json'
 
+ import animal from '@/Data/animal.json'
 async function Animalsection () {
-
-    const Data = animal.slice(0,4)
+  
+    const Data =  animal.slice(0,4) 
 
 console.log(Data)
 
@@ -18,12 +18,13 @@ console.log(Data)
         {Data.map( D => (
             <div key={D.id} className="card bg-base-100 shadow-sm">
   <div className="card-body">
-    <h2 className="card-title">{D.name}</h2>
-    <p>{D.description}</p>
+    <h2 className="card-title font-semibold text-2xl">{D.name}</h2>
+    <p > {D.description}</p>
   </div>
   <figure>
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+    className='h-60 w-full'
+      src={D.image}
       alt="Shoes" />
   </figure>
 </div>
