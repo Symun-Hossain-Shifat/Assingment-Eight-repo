@@ -9,7 +9,7 @@ function Homepage () {
     <div >
 
 
-      <div className='w-9/12 mx-auto flex justify-between items-center md:flex-row flex-col'>
+      <div className=' w-full md:w-9/12 mx-auto flex justify-between items-center md:flex-row flex-col'>
         <h1 className='font-bold  mb-10 text-3xl text-green-900 text-center my-4 '>All Animals</h1>
       <select defaultValue="Pick a color" className="select appearance-none">
   <option disabled={true}></option>
@@ -27,7 +27,7 @@ function Homepage () {
 
 
 
-      <div className='w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 '>
+      <div className=' w-10/12 md:w-8/12 mx-auto my-5 gap-10 grid grid-cols-1 md:grid-cols-2 '>
         {animals.map( animal => (
           <div key={animal.id} className="card bg-base-100 shadow-sm">
   <figure>
