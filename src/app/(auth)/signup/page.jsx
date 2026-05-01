@@ -2,13 +2,17 @@
 
 import { authClient } from '@/lib/auth-client'
 import Link from 'next/link'
-import React from 'react'
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react'
+import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 
 
 function signuppage () {
 
+const router = useRouter();
+ const [show , setShow ] = useState(false)
 
   const Handlesignup = async (e) => {
      e.preventDefault()
@@ -24,13 +28,16 @@ function signuppage () {
     email: email, // required
     password: password, // required
     image: image,
-    callbackURL: "/",
+    callbackURL: '/signin',
 });
 
 
 
 if(data){
  toast.success('Registration successfull')
+ setTimeout( () => {
+  router.push('/signin')
+ } , 1000 )
 }
 if(error){
   toast.error(error.message)
@@ -63,10 +70,20 @@ if(error){
 
   <label className="label">Image URL</label>
   <input type="URL" required className="input" name='Image' placeholder="Image URL" />
-
+ 
+ 
+ 
+ <div className='relative'>
   <label className="label">Password</label>
-  <input type="password" required className="input" name='Password' placeholder="Password" />
+  <input type={`${show ? 'text' : 'password' }`} required className="input " name='Password' placeholder="Password" />
+ <span onClick={() => setShow(!show)} className='absolute top-7 right-3'>{show ? <FaRegEye size={18} />  : <FaRegEyeSlash  size={18} /> } </span>
 
+ </div>
+  
+  
+  
+  
+  
   <button className="btn btn-neutral mt-4">Register</button>
    
   
