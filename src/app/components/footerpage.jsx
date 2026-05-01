@@ -7,6 +7,17 @@ function Footerpage () {
   return (
     <div className='bg-black text-white p-5 mt-5'>
       <footer className="footer grid grid-cols-1 py-10 md:grid-cols-3 container gap-5 mx-auto ">
+  
+    <div className='space-y-3'>
+    <h6 className=" font-bold text-xl text-white">About section
+</h6>
+<p className='font-semibold text-[15px]'>QurbaniHat is a trusted livestock booking platform where users can
+            explore cows, goats, and other animals for Qurbani with confidence.</p>
+
+  </div> 
+  
+  
+  
   <div className='space-y-3'>
     <h6 className=" font-bold text-xl text-white">Contact info
 </h6>
@@ -21,13 +32,7 @@ function Footerpage () {
   </div>
 
 
-  <div className='space-y-3'>
-    <h6 className=" font-bold text-xl text-white">About section
-</h6>
-<p className='font-semibold text-[15px]'>QurbaniHat is a trusted livestock booking platform where users can
-            explore cows, goats, and other animals for Qurbani with confidence.</p>
 
-  </div> 
 
   <nav className='space-y-3'>
     <h6 className=" font-bold text-xl text-white">Social</h6>

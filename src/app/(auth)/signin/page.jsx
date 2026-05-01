@@ -1,22 +1,60 @@
+'use client'
+
+
+import { authClient } from '@/lib/auth-client'
 import Link from 'next/link'
 import React from 'react'
+import { toast } from 'react-toastify';
+
+
+
 
 
 function Signinpage () {
+
+
+  const Handlesignin = async (e) => {
+     e.preventDefault()
+     const form = e.target
+     const email = form.Email.value
+     const password = form.Password.value
+     
+     console.log(email , password )
+
+const { data, error } = await authClient.signIn.email({
+    email: email, // required
+    password: password , // required
+    rememberMe: false ,
+    callbackURL: "/",
+});
+if(data){
+ toast.success('Login successfull')
+}
+if(error){
+  toast.error(error.message)
+}
+ console.log(data)
+ console.log(error)
+
+  }
+
+
+
+
   return (
     <div className='border items-center h-screen'>
 
         <div className='flex flex-col justify-center text-center mt-5 p-5  bg-white space-y-2 mx-auto  my-auto border-base-300 rounded-box w-xs border'>
-            <form >  
+            <form onSubmit={Handlesignin}>  
                  
  <fieldset className="space-y-2 text-left fieldset">
   <h1 className='text-center text-2xl font-bold '>Login</h1>
 
   <label className="label">Email</label>
-  <input type="email" required className="input" placeholder="Email" />
+  <input type="email" required className="input" name='Email' placeholder="Email" />
 
   <label className="label">Password</label>
-  <input type="password" required className="input" placeholder="Password" />
+  <input type="password" required className="input" name='Password' placeholder="Password" />
 
   <button className="btn btn-neutral mt-4">Login</button>
    
@@ -39,6 +77,7 @@ function Signinpage () {
 
            
         </div>
+       
     </div>
   )
 }
