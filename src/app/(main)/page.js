@@ -1,3 +1,4 @@
+import 'animate.css'
 import Animalsection from "../components/animalsection";
 import Bannerpage from "../components/banner";
 import Descriptionpage from "../components/description";

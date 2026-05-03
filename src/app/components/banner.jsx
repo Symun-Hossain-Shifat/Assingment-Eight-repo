@@ -8,7 +8,7 @@ function Bannerpage () {
         <div className='my-auto space-y-3'>
           <h1 className='font-bold text-3xl  '> Find Your Perfect Qurbani Animal Today</h1>
           <p className='text-[15px] font-bold '>Bangladesh’s Smart Qurbani Livestock Platform</p>
-        <button className='btn mx-auto btn-warning text-white font-semibold flex items-center'>  <MdOutlineArrowBack size={20}/> Buy Now</button>
+        <button  className='btn animate__animated animate-pulse mx-auto btn-warning text-white font-semibold flex items-center'>  <MdOutlineArrowBack size={20}/> Buy Now</button>
 
           </div>
       </div>
