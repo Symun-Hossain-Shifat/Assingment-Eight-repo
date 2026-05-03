@@ -1,6 +1,6 @@
 Project Name : Qurban Animals Platform.
 Purpost : To make easier for the consumers to buy their qurbani eid animal . By This online Platform Any consumer can choose his favourite animale with confidence . so the main purpose of this app for sold animals . basically we can tel this "ONLINE QURVANIR HAT"
-LIVE LINK  : 
+LIVE LINK  : https://qurban-animal-buying-platform.vercel.app/
 Features : 
 * A user can buy animals for eid from this online platform 
 * for visit animals details info the user make sure that , he or she is logged in this website
