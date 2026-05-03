@@ -53,7 +53,7 @@ function Homepage () {
     <p className='font-semibold '>Price : {animal.price}</p>
     <div className="card-actions justify-end">
     <Link href={`/details/${animal.id}`}>
-    <button className="btn btn-primary">Veiw Details</button>
+    <button className="btn btn-primary animate__animated animate-pulse">Veiw Details</button>
     
     </Link>
       
