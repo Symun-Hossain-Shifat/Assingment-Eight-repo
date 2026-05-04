@@ -23,7 +23,7 @@ export function Usereditpage () {
     }
   return (
     <Modal>
-        <Button variant="secondary">Open Contact Form</Button>
+        <Button variant="secondary">Update Profile</Button>
       <Modal.Backdrop>
         <Modal.Container placement="auto">
           <Modal.Dialog className="sm:max-w-md">
@@ -32,7 +32,7 @@ export function Usereditpage () {
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                <BiUser></BiUser>
               </Modal.Icon>
-              <Modal.Heading>Update User</Modal.Heading>
+              <Modal.Heading>Update Profile</Modal.Heading>
               
             </Modal.Header>
             <Modal.Body className="p-6">
